@@ -3,7 +3,7 @@ import './App.css';
 import { useTranslation } from 'react-i18next';
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation('common');
 
   return (
     <div className="App">
@@ -18,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t('welcome_text')}
+          {t('testing.welcome_text')}
         </a>
       </header>
     </div>
